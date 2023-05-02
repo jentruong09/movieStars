@@ -14,10 +14,11 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: #1e1f21;
+    --second-bg-color: #1f242d; 
     --text-color: #fff;
-    --main-color: darkgoldenrod;
+    --off-text-color: #841818;
+    --main-color: #E0BB20;
 }
 
 html {
@@ -30,14 +31,74 @@ body {
     color: var(--text-color);
 }
 
+/* header */
 .header h2 {
     font-family: 'Vina Sans', cursive;
     font-size: 100px;
+    /* color: var(--off-text-color); */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .header h2 i {
     color: var(--main-color);
+}
+
+span.s {
+    margin-left: -3.5rem;
+    font-family: 'Vina Sans', cursive;
+    font-size: 100px;
+    font-style: italic;
+}
+
+/* search bar */
+.movie-search-box {
+    margin: 1rem 0;
+    height: 35px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+.search-content,
+.search-btn {
+    width: 40%;
+    
+}
+
+.search-content {
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    outline: 0;
+    border: 1px solid var(--main-color);
+    color: var(--bg-color);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    
+}
+
+.search-btn {
+    width: 55px;
+    height: 35px;
+    font-size: 1.2rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    transition: all 0.4s linear;
+}
+
+.search-btn:hover {
+    background: var(--dark-color);
+    color: var(--main-color);
+}
+
+.search-btn {
+    cursor: pointer;
+    outline: 0;
+    font-size: 2rem;
 }
