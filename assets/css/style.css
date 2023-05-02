@@ -1,0 +1,43 @@
+/* font for header */
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+/* getting rid of web styles */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: darkgoldenrod;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header h2 {
+    font-family: 'Vina Sans', cursive;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2 i {
+    color: var(--main-color);
+}
