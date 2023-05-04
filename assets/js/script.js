@@ -1,7 +1,8 @@
 let movieNameSearched = document.getElementById("search-input");
 let searchBtn = document.getElementById("search-btn");
 let searchResult = document.getElementById("search-results");
-
+let resultContainer = document.getElementById("container");
+let movieCloseBtn = document.getElementById("movie-close-btn");
 
 // fetch API data
 let getMovie = () => {
@@ -19,6 +20,7 @@ let getMovie = () => {
             //If movie exists in database
             if (data.Response == "True") {
                 console.log(data)
+                
               searchResult.innerHTML = `
                 <div class="info">
                     <img src=${data.Poster} class="poster">
@@ -29,9 +31,9 @@ let getMovie = () => {
                             <h4>${data.imdbRating}</h4>
                         </div>
                         <div class="details">
-                            <span>${data.Rated}</span>
-                            <span>${data.Year}</span>
-                            <span>${data.Runtime}</span>
+                            <span>Rated: ${data.Rated}</span>
+                            <span>Year: ${data.Year}</span>
+                            <span>Runtime: ${data.Runtime}</span>
                         </div>
                         <div class="genre">
                             <div>${data.Genre.split(",").join("</div><div>")}</div>
@@ -44,15 +46,18 @@ let getMovie = () => {
                 <p>${data.Actors}</p>
                 
             `;
+            resultContainer.style.display = "inline"
             }
-            //If movie does NOT exists in database
+            //if movie does not exists in database
             else {
                 searchResult.innerHTML = `<h3 class='msg'>${data.Error}</h3>`;
+                resultContainer.style.display = "inline"
             }
           })
-          //If error occurs
+          //if error occurs
           .catch(() => {
             searchResult.innerHTML = `<h3 class="msg">Error Occured</h3>`;
+            resultContainer.style.display = "inline"
           });
       }
 };
@@ -60,3 +65,7 @@ let getMovie = () => {
 //event listeners
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
+movieCloseBtn.addEventListener("click", () => {
+    //console.log("clicked")
+    resultContainer.style.display = "none"
+});
