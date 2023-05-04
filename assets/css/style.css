@@ -103,6 +103,7 @@ span.s {
 #container {
   font-size: 16px;
   width: 90%;
+  height: 70%;
   max-width: 37.5em;
   padding: 3em 1.8em;
   background-color: var(--second-bg-color);
@@ -174,8 +175,9 @@ h2 {
   margin: 0.6em 0 0.9em 0;
 }
 
-.rating img {
+.rating i {
   width: 1.2em;
+  color: var(--main-color);
 }
 
 .rating h4 {

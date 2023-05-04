@@ -8,11 +8,11 @@ let movieCloseBtn = document.getElementById("movie-close-btn");
 let getMovie = () => {
     let movieName = movieNameSearched.value
     
-
+    // if empty input field
     if (movieName.length <= 0) {
         searchResult.innerHTML = `<h3 class="error-msg">Please Enter A Movie Name</h3>`;
-      }
-      //If input field is NOT empty
+    }
+      //if input field is not empty
       else {
         fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=${key}`)
           .then((response) => response.json())
@@ -44,6 +44,16 @@ let getMovie = () => {
                 <p>${data.Plot}</p>
                 <h3>Cast:</h3>
                 <p>${data.Actors}</p>
+                <h3>Director:</h3>
+                <p>${data.Director}</p>
+                <h3>Writer:</h3>
+                <p>${data.Writer}</p>
+                <h3>Awards:</h3>
+                <p>${data.Awards}</p>
+                <h3>Country Released:</h3>
+                <p>${data.Country}</p>
+                <h3>Language Released:</h3>
+                <p>${data.Language}</p>
                 
             `;
             resultContainer.style.display = "inline"
