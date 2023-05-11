@@ -14,7 +14,8 @@ let getMovie = () => {
     }
       //if input field is not empty
       else {
-        fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${key}`)
+        fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${key}`, {referrerPolicy: "unsafe_url" })
+        
           .then((response) => response.json())
           .then((data) => {
             //If movie exists in database
