@@ -14,7 +14,7 @@ let getMovie = () => {
     }
       //if input field is not empty
       else {
-        fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=2dab2d05`)
+        fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${key}`)
           .then((response) => response.json())
           .then((data) => {
             //If movie exists in database
