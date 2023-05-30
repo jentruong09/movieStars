@@ -38,6 +38,23 @@ Simply search an ingredient that you have and make a meal out of it!
 
 ## Credits
 
+Technologies Used in this project:
+
+[OMDb API](https://www.omdbapi.com)
+
+[Google Fonts](https://fonts.google.com/)
+
+[Boxicons](https://boxicons.com)
+
+<br/>
+
+Code Credits:
+
+[Coding Artist - Movie Guide App With JavaScript | HTML, CSS & JavaScript](https://www.youtube.com/watch?v=TgE71N0q5yI)
+
+
+<br/>
+
 
 ## License
 
