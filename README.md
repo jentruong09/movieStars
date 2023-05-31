@@ -46,6 +46,8 @@ Technologies Used in this project:
 
 [Boxicons](https://boxicons.com)
 
+[Color Hunt](https://colorhunt.co)
+
 <br/>
 
 Code Credits:
