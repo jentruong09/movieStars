@@ -1,7 +1,7 @@
 # movieStars
 
 ## Project Description
-Simply search an ingredient that you have and make a meal out of it!
+Search for movies and shows!
 
 <br/>
 
