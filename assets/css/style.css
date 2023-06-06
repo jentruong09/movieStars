@@ -1,5 +1,6 @@
 /* font for header */
-@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap");
 
 /* getting rid of web styles */
 * {
@@ -33,9 +34,10 @@ body {
 
 /* header */
 .header h2 {
-  font-family: "Vina Sans", cursive;
+  font-family: "Monoton", cursive;
   font-size: 100px;
   /* color: var(--off-text-color); */
+  text-shadow: 4px 8px 8px rgba(175, 185, 63, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,17 +46,21 @@ body {
 
 .header h2 i {
   color: var(--main-color);
+  font-size: 120px;
+  transform: rotate(5deg);
 }
 
 span.s {
   margin-left: -3.5rem;
-  font-family: "Vina Sans", cursive;
-  font-size: 100px;
+  margin-bottom: -2rem;
+  font-family: "Monoton", cursive;
+  font-size: 80px;
   font-style: italic;
 }
 
 /* search bar */
 .movie-search-box {
+  font-family: "Albert Sans", sans-serif;
   margin: 1rem 0;
   height: 35px;
   display: flex;
@@ -68,6 +74,7 @@ span.s {
 }
 
 .search-content {
+  font-family: "Albert Sans", sans-serif;
   padding: 0 1rem;
   font-size: 1.4rem;
   outline: 0;
@@ -101,6 +108,7 @@ span.s {
 }
 
 #container {
+  font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   width: 90%;
   height: 70%;
@@ -117,35 +125,35 @@ span.s {
   box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
 }
 
-.container::-webkit-scrollbar{
-    width: 10px
+.container::-webkit-scrollbar {
+  width: 10px;
 }
 
 .conatiner::-webkit-scrollbar-thumb {
-    background: #f0f0f0;
-    border-radius: 2rem;
+  background: #f0f0f0;
+  border-radius: 2rem;
 }
 
 .movie-close-btn {
-    position: absolute;
-    color: var(--text-color);
-    right: 2rem;
-    top: 2rem;
-    font-size: 2rem;
-    background: var(--second-bg-color);
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.9;
-    cursor: pointer;
+  position: absolute;
+  color: var(--text-color);
+  right: 2rem;
+  top: 2rem;
+  font-size: 2rem;
+  background: var(--second-bg-color);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
-.showMovie{
-    display: inline;
+.showMovie {
+  display: inline;
 }
 
 .info {
@@ -161,6 +169,7 @@ span.s {
 }
 
 h2 {
+  font-family: "Albert Sans", sans-serif;
   text-align: center;
   font-size: 1.5em;
   font-weight: 600;
@@ -181,6 +190,7 @@ h2 {
 }
 
 .rating h4 {
+  font-family: 'Albert Sans', sans-serif;
   display: inline-block;
   font-size: 1.1em;
   font-weight: 500;
@@ -196,12 +206,17 @@ h2 {
   font-weight: 300;
 }
 
+.details span {
+  font-family: 'Albert Sans', sans-serif;
+}
+
 .genre {
   display: flex;
   justify-content: space-around;
 }
 
 .genre div {
+  font-family: 'Albert Sans', sans-serif;
   border: 1px solid var(--off-text-color);
   font-size: 0.75em;
   padding: 0.4em 1.6em;
@@ -210,11 +225,13 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
   margin-top: 1.2em;
 }
 
 p {
+  font-family: 'Albert Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 300;
   line-height: 1.8em;
